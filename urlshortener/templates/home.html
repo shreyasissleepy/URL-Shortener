@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>URL Shortener in Python</title>
+</head>
+<body style="background: #191919;text-align: center;">
+    <h1 style="color: #fff; font-family: sans-serif; margin-top: 12%;">
+        URL <span style="color: rgb(23, 156, 0);">Shortener</span>
+    </h1>
+    <form action="/" method="POST">
+        <input type="text" name="longurl" 
+        style="background: #252525; padding: 10px 15px; border-radius: 0.5rem; border: 0;color: #fff; width: 24%;">
+        <button style="position: fixed; margin-left: -80px; margin-top: 5px; background: rgb(0, 203, 20); border-radius: 0.1rem; color: #fff; padding: 5px 10px; border: 0; outline: none; cursor: pointer;">Shorten</button>
+    </form>
+    {% if shortid %}
+    <p style="color: #ddd; font-family: sans-serif;">Your Short URL ID: {{ shortid }}</p>
+    {% endif %}
+</body>
+</html>
